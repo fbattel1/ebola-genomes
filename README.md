@@ -1,8 +1,8 @@
 EBOLA PROTEOMICS
 
-Title: Comparative proteomics of lethal and non-pathogenic Ebolavirus species 
+Title: Comparative proteomics of lethal and non-pathogenic Ebolavirus species envelope glycoprotein 
 
-Description: The viral genus Ebolavirus contains six different species, nearly all of which are highly lethal in humans. The species Zaire ebolavirus has caused multiple outbreaks and has a fatality rate up to 90%. Its close relative, Reston ebolavirus, is the only Ebolavirus species to infect humans without causing disease.  We would like to compare the protein sequences of Reston ebolavirus and Zaire ebolavirus to understand differences that may contribute to pathogenicity. 
+Description: The viral genus Ebolavirus contains six different species, nearly all of which are highly lethal in humans. The species Zaire ebolavirus has caused multiple outbreaks and has a fatality rate up to 90%. Its close relative, Reston ebolavirus, is the only Ebolavirus species to infect humans without causing disease.  We would like to compare the protein sequences of Reston ebolavirus and Zaire ebolavirus envelope glycoproteins to understand differences that may contribute to pathogenicity. 
 
 Published reference: Cong et al., 2015 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4615121/
 - This paper compared proteome of Ebolavirus species to find amino acid changes that could be associated with a loss of pathogenicity
@@ -32,15 +32,15 @@ Software:
 
 
 Proposed Steps:
-1. Sequence alignment of whole proteomes and individual proteins of ZEBOV and RESTV in R 
-2. Visualization - 
+1. Sequence alignment of envelope glycoprotein and individual proteins of ZEBOV and RESTV in R (for check-in #1)
+2. Visualization - (for check-in #2)
     a. Sequence alignment by amino acid (As in example published figure or similar) - msa package or heatmap with ggplot, ggseqlogo, pheatmap, ggmsa
     b. % amino acids changed in each protein as bar graph - ggplot 
     c. % amino acids changed that are likely to have an effect on pathogenicity - ggplot and take from Table 2 (Cong et al., 2015)
     d. Phylogenetic tree - ggtree
-3. Expand alignment and visualization to include other members of the Ebolavirus genus: Sudan, Bundibugyo, Tai Forest, Bombali
+3. Expand alignment and visualization to include other members of the Ebolavirus genus: Sudan, Bundibugyo, Tai Forest, Bombali (stretch goal!)
 
-   
+
 
 Resources:
 Aligning UniProt sequences how-to: https://rpubs.com/mbelambe/835032 
