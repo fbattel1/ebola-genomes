@@ -12,7 +12,8 @@ Published reference: Cong et al., 2015 https://www.ncbi.nlm.nih.gov/pmc/articles
 Example published figure:
 - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4615121/ Supplementary figures S1-S3 (Cong et al., 2015)
 - http://yulab-smu.top/ggmsa/ not a publication but tutorial ggmsa 
-    ![Figure from above] (http://yulab-smu.top/ggmsa/reference/figures/REAMED-unnamed-chunk-5-1.png)
+   
+    ![Figure from above] (https://github.com/fbattel1/ebola-genomes/blob/main/sample_fig.png)
 
 
 Dasets:
