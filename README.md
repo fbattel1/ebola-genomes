@@ -12,12 +12,12 @@ Published reference: Cong et al., 2015 https://www.ncbi.nlm.nih.gov/pmc/articles
 Example published figure:
 - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4615121/ Supplementary figures S1-S3 (Cong et al., 2015)
 - http://yulab-smu.top/ggmsa/ not a publication but tutorial ggmsa 
+    ![Figure from above] (http://yulab-smu.top/ggmsa/reference/figures/REAMED-unnamed-chunk-5-1.png)
 
 
 Dasets:
-- Zaire ebolavirus (ZEBOV) proteome: https://www.uniprot.org/proteomes/UP000007209 
-- Reston ebolavirus (RESTV) proteome: https://www.uniprot.org/taxonomy/386032 (individual protein sequences available)
-
+- Zaire ebolavirus (ZEBOV) envelope GP: https://www.uniprot.org/uniprotkb/Q05320/entry
+- Reston ebolavirus (RESTV) envelope GP: https://www.uniprot.org/uniprotkb/Q66799/entry
 
 Software:
 - R (Version 2024.04.2+764)
