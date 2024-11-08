@@ -1,9 +1,10 @@
-QB 2024 Project Check-In 11.1.24 (Updateed 11.7.24 at the bottom)
-Addressing prior feedback
+# QB 2024 Project Check-In 11.1.24 (Updateed 11.7.24 at the bottom)
+
+### Addressing prior feedback
 To start, we updated our README.MD to reflect our discussion with Mike to align just the envelope glycoprotein amino acid sequences of Ebola zaire and Ebola reston. We also included a png of a sample plot we'd like to make. 
 
 
-New progress
+### New progress
 Our goal for check-in #1 was to align the sequences, which we were successful in doing. We started by downloading the txt files from uniprot and loading them into R, where we did a pairwise alignment after installing the necessary packages. You can find our code in the GP_analysis_V1.R file.
 
 We also took a screenshot of what the alignment returned in our console, a preliminary figure showing the pairwise alignment by amino acid along with the score. This is listed as "alignment_GP.png" in our repository. 
@@ -11,11 +12,11 @@ We also took a screenshot of what the alignment returned in our console, a preli
 The pairwise alignment revealed a score of -15.80577, which means that there is high variation between the sequences we've aligned. It will be interesting to see what else we can glean through our visualizations. 
 
 
-Project organization
+### Project organization
 Moving forward, we would like to visualize the alignment using one of the methods listed in our README. A long-term goal is to align the envelope glycoprotein sequences of the other ebola species and conduct multiple sequence alignment as opposed to pairwise alignment. See below. 
 
 
-Struggles we've encountered 
+### Struggles we've encountered 
 We played around with a number of different plotting techniques/packages (ggseqlogo, ggmsa) but had a hard time visualizing the alignment well because the length of the amino acid sequences is so long, over 600 amino acids. We couldn't get a readable figure this way. 
 
 We're thinking of either 
@@ -30,7 +31,7 @@ Finally, as alluded to above, we could also align the sequences of other ebola s
 If you have any suggestions for which direction is best please let us know :) 
 
 
-Update 11.7.24
+## Update 11.7.24
 
 We decided to pick a shorter stretch of amino acids in the glycoprotein to visualize as our next goal for check-in 1. 
 
