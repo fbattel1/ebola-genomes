@@ -20,13 +20,15 @@ We chose to recapitulate this seqeuence alignment and analyze the amino acid dif
 
 ### Software:
 - R (Version 2024.04.2+764)
-    - msa package  
-    - Biostrings package
-    - ggseqlogo package*
-    - pheatmap package
-    - ggplot package
-    - ggtree package 
-    - ggmsa * 
+    - Biostrings_2.72.1
+    - tidyverse_2.0.0
+    - pwalign_1.0.0
+    - ggthemes_5.1.0
+    - ggplot2_3.5.1
+    - dplyr_1.1.4 
+    - ggmsa_1.10.0
+    - ggseqlogo_0.2 
+
 
 
 ### Proposed Steps:
@@ -37,8 +39,28 @@ We chose to recapitulate this seqeuence alignment and analyze the amino acid dif
     c. % amino acids changed that are likely to have an effect on pathogenicity - ggplot and take from Table 2 (Cong et al., 2015)
     d. Phylogenetic tree - ggtree
 3. Expand alignment and visualization to include other members of the Ebolavirus genus: Sudan, Bundibugyo, Tai Forest, Bombali (stretch goal!)
+ 
 
-file:///Users/cmdb/Documents/Quant%20bio/ebola-genomes/Scripts/GP_anlaysis_V3.html 
+### Repository Organization
+- Docs
+    checkin-11.1.24.MD = check-in #1 
+    checkin-11.22.24.MD = check-in #2 
+- Figures
+    ggmsa_GP_alignment.png = our ggmsa alignment
+    ggseqlogo_GP_alignment.png = our ggseqlogo alignment 
+- Old
+    GP_analysis_V1.R = alignment of full GP sequences before narrowing down project focus
+    GP_analysis_V2.R = alignment and visualization of partial GP sequences before moving to R notebook 
+    alignment_GP.png = console output of alignment as a test
+    ebola_reston_GP.txt = full length Reston GP protein sequence
+    ebola_zaire_GP.txt = full length Zaire GP protein sequence 
+- Raw data
+    rgp_30_60.txt = 30 amino acid sequence spanning region of interest for Reston ebolavirus
+    zgp_30_60.txt = 30 amino acid sequence spanning region of interest for Zaire ebolavirus
+- Scripts
+    GP_anlaysis_V3.Rmd = R notebook of our full script so far, including alignment, visualization, and analysis 
+    GP_anlaysis_V3.html = associated html
+
 
 ### Resources:
 Aligning UniProt sequences how-to: https://rpubs.com/mbelambe/835032 
