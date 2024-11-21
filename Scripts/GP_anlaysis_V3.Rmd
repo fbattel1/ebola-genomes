@@ -1,0 +1,67 @@
+---
+title: "Comparison of Ebola virus glycoprotein region between Ebola Zaire and Ebola Reston"
+output: html_notebook
+---
+
+[here we can put the theory behind our project and code]
+
+```{r}
+# Loading libraries
+
+library(Biostrings)
+library(tidyverse)
+library(pwalign)
+library(ggthemes)
+library(ggplot2)
+library(dplyr)
+library(ggmsa)
+library(ggseqlogo)
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+```{r}
+# Sequence alignment 
+
+# Using a stretch of amino acid sequences from AA 30 to 60, spanning AA 33-50 
+# AA 33-50 has been identified as playing a role in infectivity 
+
+# Read in sequences from txt files
+# Zaire GP
+zgp <- AAString(readLines("zgp_30_60.txt"))
+print(zgp)
+
+# Reston GP 
+rgp <- AAString(readLines("rgp_30_60.txt"))
+print(rgp)
+
+ 
+# Align sequences using pairwise alignment 
+alignment_GP <- pairwiseAlignment(pattern = zgp, subject = rgp)
+print(alignment_GP)
+
+
+# Extract sequences (with ziare as pattern and reston as subject) and convert to character vector
+# Character vector will store strings of text 
+aligned_pattern <- as.character(alignment_GP@pattern)
+aligned_subject <- as.character(alignment_GP@subject)
+
+# Create alignment matrix 
+# Splits into single characters
+# 2 rows, one for each sequence
+# byrow = TRUE --> data filled by row 
+alignment_matrix <- matrix(c(strsplit(aligned_pattern, "")[[1]],
+                             strsplit(aligned_subject, "")[[1]]),
+                           nrow = 2, byrow = TRUE)
+
+
+# Labels rows, or sequences, as below 
+rownames(alignment_matrix) <- c("Zaire", "Reston")
+```
+
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
