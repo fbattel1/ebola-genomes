@@ -38,7 +38,7 @@ We chose to recapitulate this seqeuence alignment and analyze the amino acid dif
     d. Phylogenetic tree - ggtree
 3. Expand alignment and visualization to include other members of the Ebolavirus genus: Sudan, Bundibugyo, Tai Forest, Bombali (stretch goal!)
 
-
+file:///Users/cmdb/Documents/Quant%20bio/ebola-genomes/Scripts/GP_anlaysis_V3.html 
 
 ### Resources:
 Aligning UniProt sequences how-to: https://rpubs.com/mbelambe/835032 
