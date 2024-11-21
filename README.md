@@ -1,7 +1,4 @@
-# EBOLA PROTEOMICS
-
-### Title: 
-#### Comparative proteomics of lethal and non-pathogenic Ebolavirus species envelope glycoprotein 
+# Comparative proteomics of lethal and non-pathogenic Ebolavirus species envelope glycoproteins 
 
 ### Description & Published Reference
 The viral genus Ebolavirus contains six different species, nearly all of which are highly lethal in humans. The species Zaire ebolavirus has caused multiple outbreaks and has a fatality rate up to 90%. Its close relative, Reston ebolavirus, is the only Ebolavirus species to infect humans without causing disease.  We would like to compare the protein sequences of Reston ebolavirus and Zaire ebolavirus envelope glycoproteins to understand differences that may contribute to pathogenicity. 
