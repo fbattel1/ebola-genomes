@@ -42,22 +42,22 @@ We chose to recapitulate this seqeuence alignment and analyze the amino acid dif
  
 
 ### Repository Organization
-- Docs
+Docs
     checkin-11.1.24.MD = check-in #1 
     checkin-11.22.24.MD = check-in #2 
-- Figures
+Figures
     ggmsa_GP_alignment.png = our ggmsa alignment
     ggseqlogo_GP_alignment.png = our ggseqlogo alignment 
-- Old
+Old
     GP_analysis_V1.R = alignment of full GP sequences before narrowing down project focus
     GP_analysis_V2.R = alignment and visualization of partial GP sequences before moving to R notebook 
     alignment_GP.png = console output of alignment as a test
     ebola_reston_GP.txt = full length Reston GP protein sequence
     ebola_zaire_GP.txt = full length Zaire GP protein sequence 
-- Raw data
+Raw data
     rgp_30_60.txt = 30 amino acid sequence spanning region of interest for Reston ebolavirus
     zgp_30_60.txt = 30 amino acid sequence spanning region of interest for Zaire ebolavirus
-- Scripts
+Scripts
     GP_anlaysis_V3.Rmd = R notebook of our full script so far, including alignment, visualization, and analysis 
     GP_anlaysis_V3.html = associated html
 
