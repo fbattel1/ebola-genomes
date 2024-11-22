@@ -4,7 +4,8 @@
 To address Mike's feedback, we 
 - Organized our repo with new folders 
 - Updated README.MD to include software versions and an explanation of our repo setup
-- Began performing analyses to make sense of the differences we see
+- Began performing analyses to make sense of the differences we see between amino acid sequences 
+
 
 To address our peer reviewers, we 
 - Added answers to their questions to the background and workflow sections of our README
@@ -12,6 +13,7 @@ To address our peer reviewers, we
     - A more straightforward way of representing the iterations of our code (we chose to use an R notebook)
     - Creating folders
     - Explaining our workflow in our README
+
 
 
 ### New progress
@@ -36,12 +38,14 @@ To address our peer reviewers, we
 - Our repo has been updated and organized as stated above 
 - We reached our goal for check-in #2 
 
+
 #### Next steps
 1. Briefly explore the following tools to predict impact of amino acid substitution on protein function: SIFT, PolyPhen-2, PROVEAN for a handful of our substitutions 
 OR
 2. Get the block of code in #4 to run through all of our changes so we could get a list of initial and substituted properties, perhaps to show that most amino acids stayed the same in terms of charge but changed most based on size
 OR
 3. Move directly onto preparing our presentation 
+
 
 
 ### Struggles we've encountered 
@@ -56,12 +60,3 @@ Organizational
 
 Project
 Which next step (or combination) seems the most reasonable to you in the time we have remaining? 
-
-
-
-
-## -------------------------------- ##
-**To do**
-- Update notebook 
-- Move past alignment and start describing what you're seeing (graphs, statistics) and perform some analysis to make sense of the differences you're seeing.
-- Find a way to highlight key sites. For example, in sequence alignments or sequence logos, emphasize amino acids previously implicated in pathogenicity to guide interpretation.
