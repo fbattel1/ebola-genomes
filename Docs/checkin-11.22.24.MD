@@ -29,13 +29,15 @@ To address our peer reviewers, we
     
     So, there may not be much impact on protein activity since the charge and hydrophobicity are the same.
 
+Note that we have a very small number of amino acid changes, so statistical analysis is difficult. Let us know if you have ideas for this.
+
 
 ### Project organization
 - Our repo has been updated and organized as stated above 
 - We reached our goal for check-in #2 
 
 ### Next steps
-1. Briefly explore the following tools to predict impact of amino acid substitution on protein function: SIFT, PolyPhen-2, PROVEAN for a handful of our substitutions 
+1. Briefly explore the following tools to predict impact of amino acid substitution on protein function: SIFT, PolyPhen-2, PROVEAN for a handful of our substitutions (ex. the V --> I change)
 
 OR
 
