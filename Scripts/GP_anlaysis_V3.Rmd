@@ -1,9 +1,11 @@
 ---
-title: "Comparison of Ebola virus glycoprotein region between Ebola Zaire and Ebola Reston"
+title: "Comparative proteomics of lethal and non-pathogenic Ebolavirus species envelope glycoproteins"
 output: html_notebook
 ---
 
-[here we can put the theory behind our project and code]
+**A Critical Domain of Ebolavirus Envelope Glycoprotein Determines Glycoform and Infectivity** by Fujihira et al, 2018 (https://www.nature.com/articles/s41598-018-23357-8) identifies a small stretch of surface glycoprotein amino acids (amino acids 33-50) that play a significant role in the glycoprotein's ability to infect cells in vitro. They found differences in this stretch between Zaire ebolavirus and Reston ebolavirus. Using an in vitro system and the glycoprotein's known receptor, they found that Reston ebolavirus became more infectious when this stretch of it's glycoprotein was replaced with that of Zaire ebolavirus.
+
+We chose to recapitulate this seqeuence alignment and analyze the amino acid differences.
 
 ```{r}
 # Loading libraries
@@ -19,21 +21,18 @@ library(ggseqlogo)
 
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+## Sequence alignment 
+Using a stretch of amino acid (AA) sequences from AA 30 to 60, spanning AA 33-50 
+AA 33-50 has been identified as playing a role in infectivity 
 
 ```{r}
-# Sequence alignment 
-
-# Using a stretch of amino acid sequences from AA 30 to 60, spanning AA 33-50 
-# AA 33-50 has been identified as playing a role in infectivity 
-
 # Read in sequences from txt files
 # Zaire GP
-zgp <- AAString(readLines("zgp_30_60.txt"))
+zgp <- AAString(readLines(file.choose())) # Choose zgp_30_60.txt
 print(zgp)
 
 # Reston GP 
-rgp <- AAString(readLines("rgp_30_60.txt"))
+rgp <- AAString(readLines(file.choose())) # Choose rgp_30_60.txt
 print(rgp)
 
  
@@ -58,10 +57,74 @@ alignment_matrix <- matrix(c(strsplit(aligned_pattern, "")[[1]],
 
 # Labels rows, or sequences, as below 
 rownames(alignment_matrix) <- c("Zaire", "Reston")
+
 ```
 
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+## ggmsa visualization
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+```{r}
+# Convert matrix to data frame 
+alignment_aa <- AAStringSet(apply(alignment_matrix, 1, paste, collapse = ""))
+
+# Ensure unique names for each sequence 
+names(alignment_aa) <- rownames(alignment_matrix)
+
+# Plot
+
+ggmsa <- ggmsa(alignment_aa) +
+  theme_minimal() + 
+  theme(axis.text.x = element_text(size = 12), axis.text.y = element_text(size = 12),
+        plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
+        axis.title = element_text(size = 14)) +
+  labs(title = "Amino acids 30-60 comparison - Ebola Zaire and Ebola Reston GP",  # Title of the plot
+    x = "Position",  # X-axis label
+    y = "Amino Acid"  # Y-axis label
+  )
+plot(ggmsa)
+#ggsave("ggmsa_GP_alignment.png", plot = , width = 10, height = 6, dpi = 300)
+
+```
+
+
+## ggseqlogo visualization 
+
+```{r}
+# Position frequency matrix, shows how often the sequence appears in that position of the alignment
+create_pfm <- function(mat) {
+  unique_aa <- unique(unlist(mat)) # Finds unique AAs in vector form
+  pfm <- matrix(0, nrow = length(unique_aa), ncol = ncol(mat)) # Makes empty matrix with 0s for now 
+  rownames(pfm) <- unique_aa # Assigns the unique AAs to the two rows 
+  
+  # Loop through each column in the sequence alignment matrix 
+  for (i in 1:ncol(mat)) {
+    amino_acids <- mat[, i]
+    for (aa in unique_aa) { # Iterates over each AA to see if it's present in both rows of the column 
+      if (aa %in% amino_acids) {
+        pfm[aa, i] <- sum(amino_acids == aa) # Sums probability/frequency of those AAs in the column
+      }
+    }
+  }
+  
+  return(pfm) # Prints resulting matrix 
+}
+
+# Creates data frame for the position frequency matrix 
+pfm <- create_pfm(alignment_matrix)
+
+
+# Create sequence logo using pfm 
+
+ggseqlogo <- ggseqlogo(pfm, method = "prob") + 
+  labs(x = "Position", y = "Probability", 
+       title = "Amino acids 30-60 comparison - Ebola Zaire and Ebola Reston GP") + 
+  theme_minimal() + 
+  theme(plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+        axis.title = element_text(size = 12), 
+        axis.text = element_text(size = 10))
+plot(ggseqlogo)
+#ggsave("ggseqlogo_GP_alignment.png", plot = , width = 10, height = 1.5, dpi = 300)
+
+```
+
 
