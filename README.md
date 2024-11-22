@@ -56,6 +56,7 @@ Docs
 Figures
 - ggmsa_GP_alignment.png = our ggmsa alignment
 - ggseqlogo_GP_alignment.png = our ggseqlogo alignment 
+- substitution_table.png = amino acid substitution frequency 
 
 Old
 - GP_analysis_V1.R = alignment of full GP sequences before narrowing down project focus
@@ -70,7 +71,7 @@ Raw data
 
 Scripts
 - GP_anlaysis_V3.Rmd = R notebook of our full script so far, including alignment, visualization, and analysis 
-- GP_anlaysis_V3.html = associated html
+- GP_anlaysis_V3.nb.html = associated html
 
 
 ### Resources:
