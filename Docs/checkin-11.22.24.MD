@@ -18,16 +18,16 @@ To address our peer reviewers, we
 1. We spent a significant amount of time incorporating feedback, as detailed above, to make our repository, README, and scripts more understandable for reproducibility. 
 
 2. We then created a substitution table of the amino acid changes that occurred.
-- We found the frequency of each substitution and generated a bar plot showing the frequency of each change. 
-- This can be found in /Figures as substitution_table.png
-- We found that V --> I occurred most freqeuntly. We will interpret this and other data and recocnile them with the paper's findings to a greater extent in our final presentation.
+    - We found the frequency of each substitution and generated a bar plot showing the frequency of each change. 
+    - This can be found in /Figures as substitution_table.png
+    - We found that V --> I occurred most freqeuntly. We will interpret this and other data and recocnile them with the paper's findings to a greater extent in our final presentation.
 
 3. We also wrote and executed code to determine the percent identity between the two sequences and found this to be **60%**. 
 
 4. We wrote a block of code to analyze amino acid properties of the initial and changed amino acid. We looked at this for V --> I, which is the change that occurred most frequently between Zaire and Reston ebolavirus glyocproteins. Our results are as follows:
-- From: V Properties: Neutral, Small, Hydrophobic 
-- To: I Properties: Neutral, Large, Hydrophobic 
-So, there may not be much impact on protein activity since the charge and hydrophobicity are the same.
+    - From: V Properties: Neutral, Small, Hydrophobic 
+    - To: I Properties: Neutral, Large, Hydrophobic 
+    So, there may not be much impact on protein activity since the charge and hydrophobicity are the same.
 
 
 
