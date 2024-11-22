@@ -45,7 +45,7 @@ We chose to recapitulate this seqeuence alignment and analyze the amino acid dif
 1. We sucessfully aligned the relevant amino acids from the two surface glycopropteins, from amino acids 30 through 60 which overlap with those of interest, 33 through 50. We did not observe any alignment discrepancies or gaps, but the alignment package is equipped to handle and visualize this. This code can be found in /Scripts/GP_anlaysis_V3.Rmd
 2. We successfully visualized the alignment sequence in two different ways, using ggmsa and ggseqlogo. These figures can be found in /Figures as gmsa_GP_alignment.png and ggseqlogo_GP_alignment.png 
 3. Instead of expanding our alignment to the full GP sequences, to other members of the Ebolavirus genus, or to other hemorrhagic fevers, as we initially proposed (and as suggested by a few peer reviewers), we chose instead to dig deeper into the nature of the specific amino acid changes in the 33-55 amino acid stretch of Zaire ebolavirus and Reston ebolavirus GPs. 
-4. **Our next goal is, at the suggestion of a peer reviewer, to identify and highlight key sites in the amino acid alignment stretch that represent important changes with biological consequences. We aim to have this complete for check-in #2** 
+4. **Our next goal is, at the suggestion of a peer reviewer, is to identify and highlight key sites in the amino acid alignment stretch that represent important changes with biological consequences. We aim to have this complete for check-in #2** 
 
 
 ### Repository Organization:
