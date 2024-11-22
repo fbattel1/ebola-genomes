@@ -4,63 +4,63 @@
 To address Mike's feedback, we 
 - Organized our repo with new folders 
 - Updated README.MD to include software versions and an explanation of our repo setup
-- Began performing analyses to make sense of the differences we see. 
+- Began performing analyses to make sense of the differences we see
 
 To address our peer reviewers, we 
-- Added answers to all of their questions to the background section of our README
-- 
+- Added answers to their questions to the background and workflow sections of our README
+- Incorporated feasible suggestions, including
+    - A more straightforward way of representing the iterations of our code (we chose to use an R notebook)
+    - Creating folders
+    - Explaining our workflow in our README
 
 
 ### New progress
-We made significant updates by incorporating feedback, as above.
+1. We spent a significant amount of time incorporating feedback, as detailed above, to make our repository, README, and scripts more understandable for reproducibility. 
 
-We also ... 
+2. We then created a substitution table of the amino acid changes that occurred.
+- We found the frequency of each substitution and generated a bar plot showing the frequency of each change. 
+- This can be found in /Figures as substitution_table.png
+- We found that V --> I occurred most freqeuntly. We will interpret this and other data and recocnile them with the paper's findings to a greater extent in our final presentation.
+
+3. We also wrote and executed code to determine the percent identity between the two sequences and found this to be **60%**. 
+
+4. We wrote a block of code to analyze amino acid properties of the initial and changed amino acid. We looked at this for V --> I, which is the change that occurred most frequently between Zaire and Reston ebolavirus glyocproteins. Our results are as follows:
+- From: V Properties: Neutral, Small, Hydrophobic 
+- To: I Properties: Neutral, Large, Hydrophobic 
+So, there may not be much impact on protein activity since the charge and hydrophobicity are the same.
+
 
 
 ### Project organization
 - Our repo has been updated and organized as stated above 
 - We reached our goal for check-in #2 
-- Our next step is to 
+
+#### Next steps
+1. Briefly explore the following tools to predict impact of amino acid substitution on protein function: SIFT, PolyPhen-2, PROVEAN for a handful of our substitutions 
+OR
+2. Get the block of code in #4 to run through all of our changes so we could get a list of initial and substituted properties, perhaps to show that most amino acids stayed the same in terms of charge but changed most based on size
+OR
+3. Move directly onto preparing our presentation 
 
 
 ### Struggles we've encountered 
 
-It took a bit of work to reorganize our github repo, I'm not sure we learned how to move things around. 
+It took a bit of work to reorganize our github repo, I think it would be helpful to teach future classes how to effectively create folders, remove files, and move files on github. 
 
-What would be the purpose of a conda environment if we're running things through RStudio and not on our terminal? 
+
+**Questions**
+Organizational
+1. What would be the purpose of a conda environment if we're running things through RStudio and not on our terminal? Is it sufficient to write the software and package versions in our README? 
+2. How do we get our R notebook to be embedded in our github so it shows with the nice interface as opposed to just code? 
+
+Project
+Which next step (or combination) seems the most reasonable to you in the time we have remaining? 
 
 
 
 
 ## -------------------------------- ##
-Feedback from others
-
-Mike feedback to implement:
-It's definitely time to move past alignment and start describing what you're seeing (graphs, statistics)    and perform some analysis to make sense of the differences you're seeing.
-Make folders for proper organization of repo 
-Note what versions of packages and software you are using. The easiest ways to do this are by either creating a conda environment
-
-Peer review questions 
-- How can one strain be hemorrhagic and the other not? 
-- You are focusing on the glycoprotein which is involved in host cell interaction, are the receptors for entry into host cells known for either strain?
-- What is the difference between your V1 and V2 scripts?
-- Did you choose Zaire ebolavirus because it has the highest sequence homology with Reston ebolavirus? 
-- Does it (Ebola Reston) present any symptoms at all?
-- You mentioned that Zaire ebolavirus has caused multiple outbreaks and has a fatality rate up to 90%—is it considered the most pathogenic/lethal ebolavirus? 
-- How do you plan to handle alignment discrepancies or gaps? For example, if insertions or deletions occur in the glycoproteins, how will you account for 
-    these when visualizing alignments or calculating the percentage of amino acids that differ?
-- 
-
-
-Peer review suggestions 
-- it would be interesting to also compare another hemorrhagic strain and see if there are similar hits between the two, 
-    this could add increased significance since its is almost and n of 2 then.
-- Would it be too difficult to tile across the full amino acid sequence in manageable chunks to produce many figures like 
-    the ones you've already made? You could look at them and determine which have the most compelling differences and then 
-    add in additional viruses if you are interested in doing so. I imagine this would mostly involve reusing code you already 
-    have with small changes to look at different sequences of interest.
-- It might be helpful to create a text file or another markdown to explain the workflow (e.g., the difference between scripts 
-    V1 vs V2 and when to use them) to help with reproducibility
-- Create separate folders 
-- I think it would be really cool if you guys could find a way to highlight key sites. For example, in sequence alignments or 
-    sequence logos, emphasize amino acids previously implicated in pathogenicity to guide interpretation.
+**To do**
+- Update notebook 
+- Move past alignment and start describing what you're seeing (graphs, statistics) and perform some analysis to make sense of the differences you're seeing.
+- Find a way to highlight key sites. For example, in sequence alignments or sequence logos, emphasize amino acids previously implicated in pathogenicity to guide interpretation.
