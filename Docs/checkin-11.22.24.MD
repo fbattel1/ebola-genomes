@@ -6,14 +6,12 @@ To address Mike's feedback, we
 - Updated README.MD to include software versions and an explanation of our repo setup
 - Began performing analyses to make sense of the differences we see between amino acid sequences 
 
-
 To address our peer reviewers, we 
 - Added answers to their questions to the background and workflow sections of our README
 - Incorporated feasible suggestions, including
     - A more straightforward way of representing the iterations of our code (we chose to use an R notebook)
     - Creating folders
     - Explaining our workflow in our README
-
 
 ### New progress
 1. We spent a significant amount of time incorporating feedback, as detailed above, to make our repository, README, and scripts more understandable for reproducibility. 
@@ -38,9 +36,13 @@ To address our peer reviewers, we
 
 ### Next steps
 1. Briefly explore the following tools to predict impact of amino acid substitution on protein function: SIFT, PolyPhen-2, PROVEAN for a handful of our substitutions 
+
 OR
+
 2. Get the block of code in #4 to run through all of our changes so we could get a list of initial and substituted properties, perhaps to show that most amino acids stayed the same in terms of charge but changed most based on size
+
 OR
+
 3. Move directly onto preparing our presentation 
 
 
@@ -55,7 +57,6 @@ Organizational
 1. What would be the purpose of a conda environment if we're running things through RStudio and not on our terminal? Is it sufficient to write the software and package versions in our README? 
 2. How do we get our R notebook to be embedded in our github so it shows with the nice interface as opposed to just code? 
 
-
 Project
 
-Which next step (or combination) seems the most reasonable to you in the time we have remaining? 
+Which **next step** (or combination) seems the most reasonable to you in the time we have remaining? 
