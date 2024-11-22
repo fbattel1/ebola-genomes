@@ -27,6 +27,7 @@ To address our peer reviewers, we
 4. We wrote a block of code to analyze amino acid properties of the initial and changed amino acid. We looked at this for V --> I, which is the change that occurred most frequently between Zaire and Reston ebolavirus glyocproteins. Our results are as follows:
     - From: V Properties: Neutral, Small, Hydrophobic 
     - To: I Properties: Neutral, Large, Hydrophobic 
+    
     So, there may not be much impact on protein activity since the charge and hydrophobicity are the same.
 
 
