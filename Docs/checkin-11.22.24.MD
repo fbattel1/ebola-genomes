@@ -19,7 +19,7 @@ To address our peer reviewers, we
 2. We then created a substitution table of the amino acid changes that occurred.
     - We found the frequency of each substitution and generated a bar plot showing the frequency of each change. 
     - This can be found in /Figures as substitution_table.png
-    - We found that V --> I occurred most freqeuntly. We will interpret this and other data and recocnile them with the paper's findings to a greater extent in our final presentation.
+    - We found that V --> I occurred most freqeuntly (twice)
 
 3. We also wrote and executed code to determine the percent identity between the two sequences and found this to be **60%**. 
 
@@ -29,23 +29,18 @@ To address our peer reviewers, we
     
     So, there may not be much impact on protein activity since the charge and hydrophobicity are the same.
 
-Note that we have a very small number of amino acid changes, so statistical analysis is difficult. Let us know if you have ideas for this.
+Note that we have a very small number of amino acid changes, so statistical analysis is difficult. 
 
 
 ### Project organization
 - Our repo has been updated and organized as stated above 
 - We reached our goal for check-in #2 
 
+
 ### Next steps
-1. Briefly explore the following tools to predict impact of amino acid substitution on protein function: SIFT, PolyPhen-2, PROVEAN for a handful of our substitutions (ex. the V --> I change)
+1. Explore and then use one of the following online tools to predict the impact of the V --> I substitution on the glycoprotein: SIFT, PolyPhen-2, PROVEAN. We may also look at a few more changes if we find something interesting. 
 
-OR
-
-2. Get the block of code in #4 to run through all of our changes so we could get a list of initial and substituted properties, perhaps to show that most amino acids stayed the same in terms of charge but changed most based on size
-
-OR
-
-3. Move directly onto preparing our presentation 
+2. Move onto preparing our presentation. The story would be as follows: we aligned specific sequences relevant to infection, found percent identity, and determined substitution frequency. Then we took the most frequent change and analyzed properties of the substitution, then used SIFT, PolyPhen-2, or PROVEAN to predict impact of the substitution. We will report the impact and synthesize it with literature findings. 
 
 
 ### Struggles we've encountered 
@@ -54,11 +49,5 @@ It took a bit of work to reorganize our github repo, I think it would be helpful
 
 
 **Questions**
-
-Organizational
 1. What would be the purpose of a conda environment if we're running things through RStudio and not on our terminal? Is it sufficient to write the software and package versions in our README? 
 2. How do we get our R notebook to be embedded in our github so it shows with the nice interface as opposed to just code? 
-
-Project
-
-Which **next step** (or combination) seems the most reasonable to you in the time we have remaining? 
