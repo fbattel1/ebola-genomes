@@ -7,6 +7,8 @@ The viral genus Ebolavirus contains six different species, nearly all of which a
 
 We chose to recapitulate this seqeuence alignment and analyze the amino acid differences. 
 
+Presentation of our results: https://docs.google.com/presentation/d/1YlQ47qp497_phBVhHVyRlIltQ_m3KWGGck3ueino8T0/edit?usp=sharing 
+
 **Example figures:**
 - https://omarwagih.github.io/ggseqlogo/ 
 - http://yulab-smu.top/ggmsa/ 
